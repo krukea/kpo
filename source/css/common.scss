@@ -66,20 +66,10 @@
   border: none;
   border-radius: 6px;
 
+  cursor: pointer;
+
   transition-duration: 0.1s;
   transition-property: color, background-color;
-
-  &--size-s {
-    width: 175px;
-  }
-
-  &--size-m {
-    width: 230px;
-  }
-
-  &--size-l {
-    width: 292px;
-  }
 
   &:hover {
     opacity: 0.8;

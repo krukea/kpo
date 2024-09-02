@@ -239,6 +239,23 @@
   height: 37px;
 }
 
+.header__catalog-button span::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url('../img/icon-burger.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__catalog-button.is-open span::before {
+  width: 9.5px;
+  height: 9.5px;
+  background-image: url('../img/icon-close.svg');
+}
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -269,11 +286,17 @@
   color: inherit;
 }
 
+.header__menu-item-link--sale {
+  color: $decor-dark-red;
+}
+
 .header__submenu {
   /* display: none; */
   display: flex;
   flex-direction: column;
   gap: 14px;
+  width: max-content;
+
   position: absolute;
   top: 30px;
   left: -31px;
