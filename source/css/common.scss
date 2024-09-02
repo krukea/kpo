@@ -1,0 +1,129 @@
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0;
+  }
+}
+
+.inner-container {
+  padding-right: 34px;
+  padding-left: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 57px;
+    padding-left: 57px;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.button {
+  display: block;
+  min-width: 200px;
+  padding: 10px 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-white;
+
+  background-color: $basic-blue;
+  border: none;
+  border-radius: 6px;
+
+  transition-duration: 0.1s;
+  transition-property: color, background-color;
+
+  &--size-s {
+    width: 175px;
+  }
+
+  &--size-m {
+    width: 230px;
+  }
+
+  &--size-l {
+    width: 292px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.title {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.plain-text {
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: $basic-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.modal {
+  position: fixed;
+
+  &--hidden {
+    display: none;
+  }
+}

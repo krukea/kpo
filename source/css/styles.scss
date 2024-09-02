@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import 'fonts';
+@import 'variables';
+@import 'common';
+@import 'global';
+
+@import "blocks/header";
+
+.promo {
+  text-align: center;
+  background-color: $basic-white;
+  padding: 20px 0;
+}
+
+.promo__banner {
+  max-width: 100%;
+  height: auto;
+}
+
+.best-offers {
+  padding: 40px 20px;
+  background-color: $basic-white;
+}
+
+.best-offers__title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.best-offers__list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.best-offers__navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.best-offers__prev,
+.best-offers__next {
+  background-color: #2980b9;
+  color: $basic-white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: $basic-white;
+  padding: 20px;
+  text-align: center;
+}

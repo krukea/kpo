@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>KPO</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="header__fixed">
+      <div class="header__fixed-wrapper container">
+        <div class="header__currency">
+          <span class="header__currency-item">1 У.Е. = 79 Р | 1$ = 87.37</span>
+          <span class="header__currency-date">Курс на 27.06.2024</span>
+        </div>
+        <section class="header__user">
+          <div class="header__actions">
+            <a href="#" class="header__login">Вход</a>
+            <a href="#" class="header__register">Регистрация</a>
+          </div>
+
+          <div class="header__user-info">
+            <div class="header__entity">
+              <label for="entity">Юридическое лицо</label>
+              <select name="entity" id="entity">
+                <option value="1878" selected>ООО Тест</option>
+              </select>
+            </div>
+            <div class="header__store">
+              <label for="store">Ваш склад</label>
+              <select name="store" id="store">
+                <option value="2" selected>Янино</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="header__location">
+            <select name="city" id="city">
+              <option value="576" selected>Санкт-Петербург</option>
+            </select>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="header__main container">
+      <!-- <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button> -->
+
+      <div class="header__search">
+        <form class="header__search-form" method="get" action="/search/">
+          <input class="header__search-input" id="search_text" type="text" name="query" placeholder="Поиск"
+            aria-label="Поиск">
+
+          <input class="header__search-btn" id="search_submit" type="submit" name="search" value="" title="Искать"
+            aria-label="Искать">
+        </form>
+      </div>
+
+      <div class="header__logo">
+        <img src="img/logo.svg" alt="KlimatProf" class="header__logo-image" width="279" height="46">
+      </div>
+
+      <div class="header__phone">8 (800) 333 01 70</div>
+      <div class="header__compare">
+        <a href="/compare">Сравнение</a>
+      </div>
+      <div class="header__favorite">
+        <a href="/favorite">Избранное</a>
+      </div>
+      <div class="header__personal">
+        <a href="/personal">ЛК</a>
+        <div class="header__profile">
+          <span class="header__profile-text">Личный кабинет</span>
+          <div class="header__profile-menu">
+            <a href="#" class="header__profile-login">Войти</a> или <a href="#"
+              class="header__profile-register">Зарегистрироваться</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__cart">
+        <a href="/cart">Корзина</a>
+      </div>
+    </section>
+
+    <section class="header__navigation-wrap">
+      <div class="header__navigation container">
+        <button class="header__catalog-button button">Каталог</button>
+
+        <nav class="header__nav">
+          <ul class="header__menu list">
+            <li class="header__menu-item">
+              <span>О нас</span>
+              <ul class="header__submenu list">
+                <li class="header__submenu-item"><a href="/">О компании</a></li>
+                <li class="header__submenu-item"><a href="/">Преимущества</a></li>
+                <li class="header__submenu-item"><a href="/">Отзывы</a></li>
+                <li class="header__submenu-item"><a href="/">Новости</a></li>
+              </ul>
+            </li>
+            <li class="header__menu-item"><a href="#" class="header__menu-item-link"><span>Условия работы</span></a></li>
+            <li class="header__menu-item">
+              <span>Поддержка</span>
+              <ul class="header__submenu list">
+                <li class="header__submenu-item"><a href="/">Сертификаты</a></li>
+                <li class="header__submenu-item"><a href="/">Способы оплаты</a></li>
+                <li class="header__submenu-item"><a href="/">Обмен товара</a></li>
+                <li class="header__submenu-item"><a href="/">Способы получения</a></li>
+              </ul>
+            </li>
+            <li class="header__menu-item"><a href="#" class="header__menu-item-link"><span>Контакты</span></a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-item-link"><span>Акции</span></a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-item-link"><span>Инженерный подбор</span></a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-item-link"><span>Распродажа</span></a></li>
+          </ul>
+        </nav>
+
+        <button class="header__selection button--white">Подбор кондиционеров</button>
+      </div>
+
+    </section>
+  </header>
+
+  <main>
+
+
+  </main>
+
+  <footer></footer>
+</body>
+
+</html>

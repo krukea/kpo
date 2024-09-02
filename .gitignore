@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+.vscode
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+npm-debug.*
+Thumbs.db
+source/pixel-glass
+csscomb.*
+academy-css-comb.json
+nodesource_setup.sh
+build/
+pixel-glass/

@@ -1,0 +1,42 @@
+$black: #000000;
+$black-opacity-25: rgba(0, 0, 0, 0.25);
+$black-opacity-5: rgba(0, 0, 0, 0.05);
+$basic-black: #222222;
+$basic-black-opacity-10: #0000001a;
+$basic-black-opacity-30: #0000003a;
+$basic-black-opacity-40: #0001014a;
+$basic-black-opacity-60: #0000006a;
+
+$basic-white: #ffffff;
+
+$basic-blue: #39659b;
+
+$basic-dark-gray: #3b3b3b;
+$basic-light-gray: #6f6f6f;
+$basic-lighter-gray: #b0b0b0;
+
+$bg-light-gray: #f9f9f9;
+$decor-light-gray: #ececec;
+$decor-semi-light-gray: #c6c6c6;
+$accent-light-mint: #63d1bb;
+$accent-dark-mint: #56c3b2;
+$accent-dark-mint-opacity: #56c3b21a;
+$accent-darker-mint: #149080;
+
+$mobile-width: 375px;
+$mobile-only-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1600px;
+
+$dark-shadow: 0 4px 4px $black-opacity-25, 0 47px 19px rgba(0, 0, 0, 0.01),
+  0 26px 16px rgba(0, 0, 0, 0.05), 0 12px 12px rgba(0, 0, 0, 0.09), 0 3px 6px rgba(0, 0, 0, 0.1);
+
+/* $thin-light-gray: 1px solid $decor-semi-light-gray;
+$normal-dark-gray: 2px solid $basic-dark-gray;
+$dark-shadow: 0 6px 10px $basic-black-opacity-10;
+$radio-colored-circle: inset 0 0 0 2px $accent-light-mint, inset 0 0 0 12px $basic-white;
+$radio-faded-circle: inset 0 0 0 2px $basic-dark-gray, inset 0 0 0 12px $basic-white;
+$radio-normal-circle: inset 0 0 0 2px $basic-dark-gray, inset 0 0 0 12px $basic-white;
+$radio-colored-circle-50: inset 0 0 0 2px $accent-light-mint, inset 0 0 0 16px $basic-white;
+$radio-faded-circle-50: inset 0 0 0 2px $basic-dark-gray, inset 0 0 0 16px $basic-white;
+$radio-normal-circle-50: inset 0 0 0 2px $basic-dark-gray, inset 0 0 0 16px $basic-white; */
