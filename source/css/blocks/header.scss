@@ -96,11 +96,8 @@
   align-items: center;
   padding-top: 20px;
   padding-bottom: 16px;
-}
-
-.header__search {
-  order: 1;
-  margin-right: 275px;
+  display: grid;
+  grid-template-columns: 1fr 280px 1fr;
 }
 
 .header__search-form {
@@ -149,17 +146,21 @@
 
 .header__logo {
   width: 280px;
-  order: 2;
 }
 
 .header__logo-image {
-  width: 280px;
+  width: 100%;
   height: 46px;
+}
+
+.header__icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .header__phone {
   padding-right: 37px;
-  margin-left: 302px;
   order: 3;
   font-weight: bold;
   font-size: 18px;
@@ -251,8 +252,8 @@
 }
 
 .header__catalog-button.is-open span::before {
-  width: 9.5px;
-  height: 9.5px;
+  width: 12px;
+  height: 12px;
   background-image: url('../img/icon-close.svg');
 }
 
