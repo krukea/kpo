@@ -64,7 +64,7 @@ exports.images = images;
 
 //JS
 
-const js = () => {
+/* const js = () => {
   return gulp
     .src('source/js/scripts.js')
     .pipe(uglify())
@@ -72,7 +72,7 @@ const js = () => {
     .pipe(gulp.dest('build/js'));
 };
 
-exports.js = js;
+exports.js = js; */
 
 // WebP Generation
 
@@ -126,14 +126,14 @@ exports.server = server;
 const watcher = () => {
   gulp.watch('source/css/**/*.scss', gulp.series('styles'));
   gulp.watch('source/*.html').on('change', gulp.series(html, sync.reload));
-  gulp.watch('source/js/*.js').on('change', gulp.series(js, sync.reload));
+  /* gulp.watch('source/js/*.js').on('change', gulp.series(js, sync.reload)); */
 };
 
 exports.default = gulp.series(styles, server, watcher);
 
 // Build
 
-const build = gulp.series(clean, generateWebp, images, copy, styles, html, js);
+const build = gulp.series(clean, generateWebp, images, copy, styles, html);
 
 exports.build = build;
 

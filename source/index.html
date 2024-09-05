@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <title>KPO</title>
 </head>
@@ -42,8 +43,10 @@
           </div>
 
           <div class="header__location">
-            <select name="city" id="city">
+            <select name="city" id="city" class="header__city js-choice">
               <option value="576" selected>Санкт-Петербург</option>
+              <option value="2">Москва</option>
+              <option value="23">Нск</option>
             </select>
           </div>
         </section>
@@ -68,15 +71,15 @@
       </div>
 
       <div class="header__icons">
-        <div class="header__phone">8 (800) 333 01 70</div>
+        <div class="header__phone"><a href=""></a>8 (800) 333 01 70</div>
         <div class="header__compare">
-          <a href="/compare">Сравнение</a>
+          <a class="header__icons-link" href="/compare">Сравнение</a>
         </div>
         <div class="header__favorite">
-          <a href="/favorite">Избранное</a>
+          <a class="header__icons-link" href="/favorite">Избранное</a>
         </div>
         <div class="header__personal">
-          <a href="/personal">ЛК</a>
+          <a class="header__icons-link" href="/personal">ЛК</a>
           <div class="header__profile">
             <span class="header__profile-text">Личный кабинет</span>
             <div class="header__profile-menu">
@@ -86,7 +89,7 @@
           </div>
         </div>
         <div class="header__cart">
-          <a href="/cart">Корзина</a>
+          <a class="header__icons-link" href="/cart">Корзина</a>
         </div>
       </div>
 
@@ -140,5 +143,12 @@
 
   <footer></footer>
 </body>
+<script>
+  // Pass single element
+    document.addEventListener('DOMContentLoaded', () => {
+      const element = document.querySelector('.js-choice');
+      const choices = new Choices(element);
+    });
 
+</script>
 </html>
