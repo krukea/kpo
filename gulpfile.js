@@ -9,10 +9,8 @@ const csso = require('gulp-csso');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
-const svgstore = require('gulp-svgstore');
 const del = require('del');
 const htmlmin = require('gulp-htmlmin');
-const uglify = require('gulp-uglify');
 
 // Styles
 
@@ -64,15 +62,11 @@ exports.images = images;
 
 //JS
 
-/* const js = () => {
-  return gulp
-    .src('source/js/scripts.js')
-    .pipe(uglify())
-    .pipe(rename('scripts.min.js'))
-    .pipe(gulp.dest('build/js'));
+const js = () => {
+  return gulp.src('source/js/scripts.js').pipe(gulp.dest('build/js'));
 };
 
-exports.js = js; */
+exports.js = js;
 
 // WebP Generation
 
@@ -89,7 +83,7 @@ exports.generateWebp = generateWebp;
 
 const copy = () => {
   return gulp
-    .src(['source/fonts/*.{woff,woff2,ttf}', 'source/img/**', 'source/js/**', 'source/*.ico'], {
+    .src(['source/fonts/*.{woff,woff2,ttf}', 'source/img/**', 'source/js/*.js', 'source/*.ico'], {
       base: 'source'
     })
     .pipe(gulp.dest('build'));
@@ -133,7 +127,7 @@ exports.default = gulp.series(styles, server, watcher);
 
 // Build
 
-const build = gulp.series(clean, generateWebp, images, copy, styles, html);
+const build = gulp.series(clean, generateWebp, images, copy, styles, html, js);
 
 exports.build = build;
 

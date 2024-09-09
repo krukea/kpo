@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-3.7.1.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js"></script>
   <title>KPO</title>
 </head>
 
@@ -43,7 +45,8 @@
           </div>
 
           <div class="header__location">
-            <select name="city" id="city" class="header__city js-choice">
+            <label for="city" class="visually-hidden">Выберите ваш город</label>
+            <select name="city" id="city" class="header__city">
               <option value="576" selected>Санкт-Петербург</option>
               <option value="2">Москва</option>
               <option value="23">Нск</option>
@@ -143,12 +146,5 @@
 
   <footer></footer>
 </body>
-<script>
-  // Pass single element
-    document.addEventListener('DOMContentLoaded', () => {
-      const element = document.querySelector('.js-choice');
-      const choices = new Choices(element);
-    });
 
-</script>
 </html>

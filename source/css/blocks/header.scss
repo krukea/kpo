@@ -84,10 +84,15 @@
 .header__location {
   color: $basic-white;
   text-decoration: none;
+
   @media (max-width: $mobile-width) {
     font-size: 14px;
     font-weight: 300;
   }
+}
+
+.choices {
+  color: $basic-black;
 }
 
 .header__main {
@@ -223,7 +228,6 @@
   height: 26px;
   background-image: url('../img/icon-cart.svg');
 }
-
 
 .header__profile {
   position: relative;
